@@ -1,5 +1,5 @@
 # cards-memory-game
-A simple fullstack starter application using Node.js, Express.js, React.js and MongoDB
+A simple memory game using Node.js, Express.js, React.js and MongoDB
 
 To run this project you need to add the backend and frontend dependencies.
 In the root of the project run the following command
