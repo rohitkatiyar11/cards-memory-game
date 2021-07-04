@@ -36,19 +36,17 @@
 	width:80%;
 	margin: 20px auto;
 	background: rgb(0 126 255 / 30%);
-	/* border:solid 10px black; */
 	padding: 10px;
-	/* border-radius:10px; */
 	text-align: center;
 	color:white;
 }
 
 .card
 {
-	padding: 10px;
+	padding: 4px;
 	border: solid 1px #808080;
 	background-color: white;
-	display: inline-block;
+	display: inline-block !important;
 	border-radius: 10px;
 	font-size: 14pt;
 	text-align: center;
@@ -98,4 +96,10 @@
 	background-position-x:90px;
 	background-position-y:100px;
 }
-                
+          
+.card-body {
+    padding: 3.25rem !important;
+}
+.card-header span{
+	margin: 0 70px;
+}

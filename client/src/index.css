@@ -5,10 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: transparent linear-gradient( 180deg , #000000 0%, #0d142b 100%) 0% 0% no-repeat padding-box; 
+  background-color: #e9ecef;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.bg-light{
+  background-color: cadetblue !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
 }

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import gameService from './services/gameService';
 import { cards as defaultCards } from './constants/constants'
 import shuffleCards from "./logic/shuffleCards";
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import "./App.css";
 
 function App() {
@@ -30,18 +31,32 @@ function App() {
     setCards(cardsCopy);
   }
   return (
-    <div className="deck">
-      <div id="deck">
-        {
-          cards.map((card, index) => (
-            <div className={`card ${card.flipped ? "flipped" : "unflipped"}`} key={index} onClick={() => flipCard(index)}>
-              <div className="value">{card.flipped ? card.value : "-"}</div>
-              <div className={`suit ${card.type} ${card.flipped ? "flipped" : "unflipped"}`}></div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
+
+    <Container>
+      <Row>
+        <Col></Col>
+        <Col xs={10}>
+          <Card className="text-center">
+            <Card.Header>
+            <span>Elapsed Time: <strong>1 min</strong></span>
+            <span>Error Score: <strong>3</strong></span>
+            </Card.Header>
+            <Card.Body>
+             
+              {
+                cards.map((card, index) => (
+                  <div className={`card ${card.flipped ? "flipped" : "unflipped"}`} key={index} onClick={() => flipCard(index)}>
+                    {card.flipped && <span className="value">{card.value}</span>}
+                    <div className={`suit ${card.type} ${card.flipped ? "flipped" : "unflipped"}`}></div>
+                  </div>
+                ))
+              }
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col></Col>
+      </Row>
+    </Container>
   );
 }
 
