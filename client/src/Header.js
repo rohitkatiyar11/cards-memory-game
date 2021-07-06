@@ -7,7 +7,7 @@ export default function Header() {
 
             <Navbar expand="lg" variant="light" bg="light">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/game">Memory Game</Nav.Link>
+                    <Nav.Link>Memory Game</Nav.Link>
                     <Nav.Link href="/">change level</Nav.Link>
                 </Nav>
             </Navbar>

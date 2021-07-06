@@ -3,7 +3,8 @@ const { Schema } = mongoose;
 
 const gameSchema = new Schema({
     difficulty: String,
-    erros: Number,
+    errorCounts: Number,
+    elapsedTime: Number // Value in seconds
 })
 
 mongoose.model('games', gameSchema);

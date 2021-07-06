@@ -103,3 +103,15 @@
 .card-header span{
 	margin: 0 70px;
 }
+.card.hidden {
+	visibility: hidden;
+}
+.card.unflipped.matching {
+	background-color: #cecdcd8f;
+    color: #cecdcd8f;
+    pointer-events: none;
+}
+.card.unflipped {
+    color: #fff;
+	cursor: pointer;
+}
